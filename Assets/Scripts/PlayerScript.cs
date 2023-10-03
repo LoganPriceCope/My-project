@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour
         // Sprint
         if (Input.GetKey("left shift") == true)
         {
-            speed = speed * 2;
+            speed = speed +100;
         }
 
 
@@ -47,7 +47,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown("space") == true)
         {
             anim.SetBool("jump", true);
-            rb.AddForce(new Vector3(0, 10, 0), (ForceMode2D)ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, 15, 0), (ForceMode2D)ForceMode.Impulse);
 
         }
 
